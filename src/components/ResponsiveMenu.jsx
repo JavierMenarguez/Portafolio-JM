@@ -2,6 +2,7 @@ import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 const ResponsiveMenu = ({
     open,
+    setOpen,
     navbarLinks,
 }) => {
     const animation = {
@@ -13,15 +14,19 @@ const ResponsiveMenu = ({
     return (
         <AnimatePresence mode="await">
             {open && (
-                <motion.div {...animation} className='absolute top-20 left-0
-                w-full h-screen z-20'>
-                    <div className='text-xl font-semibold uppercase bg-primary
-                text-white py-6 m-6 rounded-3xl'>
-                        <ul className='flex flex-col justify-center items-center gap-10'>
+                <motion.div {...animation} className='fixed top-20 left-0 w-full h-screen z-20'>
+                    <div className='text-xl font-semibold uppercase bg-primary text-white m-6 rounded-3xl overflow-hidden'>
+                        <ul className='flex flex-col justify-center w-full'>
                             {
                                 navbarLinks.map((item) => (
-                                    <li key={item.id}>
-                                        <a href={item.link}>{item.title}</a>
+                                    <li key={item.id} className="w-full text-center border-b border-white/10 last:border-none">
+                                        <a
+                                            href={item.link}
+                                            onClick={() => setOpen(false)}
+                                            className="block w-full py-8 transition-colors active:bg-black/10"
+                                        >
+                                            {item.title}
+                                        </a>
                                     </li>
                                 ))
                             }

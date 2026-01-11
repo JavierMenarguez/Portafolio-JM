@@ -1,58 +1,6 @@
-export const navbarLinks = [
-    {
-        id: 1,
-        title: "Inicio",
-        link: "#Inicio"
-    },
-    {
-        id: 2,
-        title: "Experiencia",
-        link: "#experiencia"
-    },
-    {
-        id: 3,
-        title: "Sobre mí",
-        link: "#sobremi"
-    },
-    {
-        id: 4,
-        title: "Proyectos",
-        link: "#"
-    },
-    {
-        id: 5,
-        title: "Contacto",
-        link: "https://www.linkedin.com/in/javier-men%C3%A1rguez-abell%C3%A1n-706a0925a/"
-    }
-]
+import React from 'react'
+import { dataExperience } from '../data/data'
 
-export const dataExperience = [
-    {
-        id: 1,
-        title: "Técnico informatico",
-        companyName: "Electromain Electronica Industrial",
-        description: "Trabajé durante los meses de verano de 2025 donde desarrollé un ecommerce realizando mejoras en la interfaz asi como cambios en la logica de negocio y registro en base de datos.",
-        time: "JULIO 2025",
-        technologies: ["wordpress", "woocommerce", "vscode"]
-    },
-    {
-        id: 2,
-        title: "Programador ERP",
-        companyName: "Caritas Diocesis de Cartagena",
-        description: "Trabajo donde estube durante el 2024 donde mas pude mejorar y aprender. Estube desarrollando un ERP a medida donde realicé tareas tanto de mejora de caracteristicas ya desarrolladas como el la creacion de nuevas.",
-        time: "2024",
-        technologies: ["java", "sql", "eclipse", "primefaces", "github"]
-    },
-    {
-        id: 3,
-        title: "Programador Web",
-        companyName: "Slango task automation",
-        description: "Realicé 3 meses como becario donde tuve el primer contacto con el mundo de la programación. Aprendí a trabajar con las metodologías ágiles, con el backend y con el concepto de microservicios.",
-        time: "JUNIO 2023",
-        technologies: ["javascript", "github", "vuejs", "vscode"]
-    },
-
-]
 const TECH_CONFIG = {
     java: { icon: <svg className="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /><line x1="6" y1="1" x2="6" y2="4" /><line x1="10" y1="1" x2="10" y2="4" /><line x1="14" y1="1" x2="14" y2="4" /></svg>, label: "Java" },
     sql: { icon: <svg className="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>, label: "SQL" },
@@ -65,3 +13,62 @@ const TECH_CONFIG = {
     eclipse: { icon: <svg className="size-4" viewBox="0 0 24 24" fill="currentColor"> <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10c2.5 0 4.785-.917 6.54-2.433l-2.146-2.146A6.96 6.96 0 0 1 12 19a7 7 0 1 1 5.394-11.454l2.146-2.146A9.96 9.96 0 0 0 12 2z" /><circle cx="12" cy="12" r="3" /><path d="M19 11h3v2h-3v-2zM17.657 5.222l2.121 2.121-1.414 1.414-2.121-2.121 1.414-1.414zM17.657 18.778l-1.414-1.414 2.121-2.121 1.414 1.414-2.121 2.121z" /></svg>, label: "Eclipse" },
     primefaces: { icon: <svg className="size-4" viewBox="0 0 24 24" fill="currentColor"><path d="M10 2h4v3h-4V2z" /><path d="M3 11c0-4.97 4.03-9 9-9s9 4.03 9 9v7H3v-7z" /><path fill="black" d="M7 11h10v2h-4v4h-2v-4H7v-2z" style={{ mixBlendMode: 'multiply' }} /></svg>, label: "PrimeFaces" },
 };
+
+
+
+const Experience = () => {
+    return (
+        <section id="experiencia" className="max-w-4xl mx-auto py-20 px-4 scroll-m-4">
+            <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-x-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M22 13.478v4.522a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-4.522l.553 .277a20.999 20.999 0 0 0 18.897 -.002l.55 -.275zm-8 -11.478a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v2.242l-1.447 .724a19.002 19.002 0 0 1 -16.726 .186l-.647 -.32l-1.18 -.59v-2.242a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3h4zm-2 8a1 1 0 0 0 -1 1a1 1 0 1 0 2 .01c0 -.562 -.448 -1.01 -1 -1.01zm2 -6h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1z" /></svg>
+                Experiencia laboral
+            </h2>
+
+            <div className="relative border-l-2 border-white/15 ml-3 md:ml-0">
+                {dataExperience.map((item) => (
+                    <div key={item.id} className="relative mb-12 ml-6">
+                        <span className="absolute -left-[33px] top-1 size-4 rounded-full bg-primary shadow-[0_0_10px_rgba(250,204,21,0.5)]"></span>
+
+                        <div className="grid md:grid-cols-5 md:gap-10">
+                            <div className="md:col-span-2 mb-2 md:mb-0">
+                                <h3 className="text-xl font-bold text-primary leading-tight">
+                                    {item.title}
+                                </h3>
+                                <h4 className="font-semibold text-lg text-white/90">
+                                    {item.companyName}
+                                </h4>
+                                <time className="text-sm text-white/60 italic">{item.time}</time>
+                            </div>
+
+                            <div className="md:col-span-3 text-gray-300 leading-relaxed">
+                                <p>{item.description}</p>
+                                <div className="mt-6 flex flex-wrap gap-2">
+                                    {item.technologies?.map((tech) => {
+                                        const key = tech.toLowerCase().replace(/\s+/g, '');
+                                        const config = TECH_CONFIG[key];
+
+                                        if (!config) return null; // Si no hay icono, no renderiza nada
+
+                                        return (
+                                            <span
+                                                key={tech}
+                                                className="group flex items-center gap-x-2 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 rounded-lg text-xs font-medium text-gray-300 select-none transition-all hover:bg-white/10 hover:border-white/20 hover:text-white"
+                                            >
+                                                <span className="text-emerald-300 drop-shadow-md group-hover:text-primary transition-colors">
+                                                    {config.icon}
+                                                </span>
+                                                {config.label}
+                                            </span>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
+    )
+}
+
+export default Experience
