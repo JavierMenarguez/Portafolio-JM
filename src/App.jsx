@@ -3,6 +3,8 @@ import Experience from './components/Experience'
 import Navbar from './components/Navbar'
 import Hero from './components/hero'
 import AboutMe from './components/AboutMe'
+import Form from './components/Form'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
           <Hero />
           <Experience />
           <AboutMe />
+          <Form />
+          <Footer />
         </div>
       </div>
 

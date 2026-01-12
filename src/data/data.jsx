@@ -14,15 +14,15 @@ export const navbarLinks = [
         title: "Sobre mí",
         link: "#sobremi"
     },
-    {
+    /*{
         id: 4,
         title: "Proyectos",
         link: "#"
-    },
+    },*/
     {
         id: 5,
         title: "Contacto",
-        link: "https://www.linkedin.com/in/javier-men%C3%A1rguez-abell%C3%A1n-706a0925a/"
+        link: "#contacto"
     }
 ]
 
