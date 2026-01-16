@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="w-full py-8 border-t border-white/5 bg-[#020617]/30 backdrop-blur-sm">
-            {/* Cambiamos flex por grid de 3 columnas en escritorio */}
+
             <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 items-center gap-6 text-sm font-medium text-gray-500">
 
                 <p className="text-balance text-center md:text-left">
