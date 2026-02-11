@@ -29,17 +29,17 @@ export const navbarLinks = [
 export const dataExperience = [
     {
         id: 1,
-        title: "Técnico informatico",
-        companyName: "Electromain Electronica Industrial",
-        description: "Trabajé durante los meses de verano de 2025 donde desarrollé un ecommerce realizando mejoras en la interfaz asi como cambios en la logica de negocio y registro en base de datos.",
+        title: "Técnico informático",
+        companyName: "Electromain Electrónica Industrial",
+        description: "Trabajé durante los meses de verano de 2025 donde desarrollé un ecommerce realizando mejoras en la interfaz, así como cambios en la lógica de negocio y registro en base de datos.",
         time: "JULIO 2025",
         technologies: ["wordpress", "woocommerce", "vscode"]
     },
     {
         id: 2,
         title: "Programador ERP",
-        companyName: "Caritas Diocesis de Cartagena",
-        description: "Trabajo donde estube durante el 2024 donde mas pude mejorar y aprender. Estube desarrollando un ERP a medida donde realicé tareas tanto de mejora de caracteristicas ya desarrolladas como el la creacion de nuevas.",
+        companyName: "Cáritas Diócesis de Cartagena",
+        description: "Trabajo donde estuve durante el 2024 donde más pude mejorar y aprender. Estube desarrollando un ERP a medida donde realicé tareas tanto de mejora de características ya desarrolladas como en la creacion de nuevas.",
         time: "2024",
         technologies: ["java", "sql", "eclipse", "primefaces", "github"]
     },
